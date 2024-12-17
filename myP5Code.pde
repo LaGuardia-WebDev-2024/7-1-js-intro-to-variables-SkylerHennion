@@ -5,7 +5,9 @@ void setup() {
 }
 
 //🎯Varaible Declarations Go Here
-var eyeSize = 8;
+var eyeSize = 58;
+var toothSize = 20;
+
 
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
@@ -15,21 +17,40 @@ void draw(){
 
   //💡⬇️⬇️⬇️💡 Your Code For This Unit Goes Here
   
-  ellipse(150, 70, 60, 120);  // left ear
-  ellipse(240, 70, 60, 120);  // right ear
-
-  ellipse(200, 170, 150, 150);    // face
-
-  fill(0, 0, 0);
-  ellipse(170, 150, eyeSize, eyeSize);  // left eye
-  ellipse(230, 150, eyeSize, eyeSize);  // right eye
-
-  line(150, 200, 250, 200);   // mouth
-
-  noFill();
-  rect(185, 200, 15, 10); // left tooth
-  rect(200, 200, 15, 10); // right tooth
   
+// left ear
+  ellipse(150, 70, 60, 120); 
+ // right ear
+ellipse(240, 70, 60, 120); 
+  
+// face
+  ellipse(200, 170, 150, 150);    
+
+
+// left eye
+  fill(0, 0, 0);
+  ellipse(170, 150, eyeSize, eyeSize);  
+// right eye
+ ellipse(230, 150, eyeSize, eyeSize); 
+ 
+//light
+fill(255, 255, 255);
+  ellipse(180, 140, 20, 20);
+  ellipse(240, 140, 20, 20);
+  
+
+
+
+// left tooth
+  noFill();
+  rect(185, 200, 15, toothSize); 
+// right tooth
+  rect(200, 200, 15, toothSize); 
+  
+
+// mouth
+strokeWeight(6)
+ line(150, 200, 250, 200);   
 
 }
 
